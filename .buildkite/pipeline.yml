@@ -1,8 +1,4 @@
 steps:
-  - label: ":maven: :package:"
-    command: mvn package
+  - label: ":maven: :test:"
+    command: run_script.sh
     artifact_paths: "target/*.jar"
-    plugins:
-      - docker-compose#v1.5.2:
-          run: maven
-          config: .buildkite/docker-compose.yml
