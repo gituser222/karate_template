@@ -3,5 +3,4 @@ echo "Docker version is "
 docker -v
 echo "Building docker image"
 docker build --tag karate:1.0 .
-echo "Runnung docker image"
-docker run --rm karate:1.0
+docker rmi karate:1.0
