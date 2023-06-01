@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 ENV CLIENT_ID xyz123
 ENV CLIENT_SECRET 123abc
-CMD["mvn", "test"]
+CMD ["mvn", "test"]
