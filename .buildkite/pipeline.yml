@@ -3,3 +3,4 @@ steps:
     command: "run_script.sh"
     artifact_paths: 
       - "target/karate-reports/*"
+      - "target/karate-reports/res/*"
