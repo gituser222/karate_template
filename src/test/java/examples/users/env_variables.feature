@@ -1,5 +1,5 @@
 Feature:
 
 Scenario:
-* def  CLIENT_ID = karate.properties['CLIENT_ID']
+* def  CLIENT_ID = java.lang.System.getenv('CLIENT_ID');
 * print CLIENT_ID
