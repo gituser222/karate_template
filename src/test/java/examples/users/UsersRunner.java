@@ -6,12 +6,7 @@ class UsersRunner {
     
     @Karate.Test
     Karate testUsers() {
-        return Karate.run("users").relativeTo(getClass());
-    }    
-
-    @Karate.Test
-    Karate testUsers() {
-        return Karate.run("env_variables").relativeTo(getClass());
+        return Karate.run("users", "env_variables").relativeTo(getClass());
     }    
 
 }
