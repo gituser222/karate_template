@@ -2,4 +2,4 @@ steps:
   - label: ":maven: :test:"
     command: "run_script.sh"
     artifact_paths: 
-      - "target"
+      - "target/karate-reports/karate-summary.html"
