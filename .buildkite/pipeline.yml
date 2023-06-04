@@ -4,3 +4,9 @@ steps:
     artifact_paths: 
       - "target/karate-reports/*"
       - "target/karate-reports/res/*"
+
+  - wait: ~
+    continue_on_failure: true
+  - plugins:
+      - junit-annotate#v2.4.1:
+          artifacts: tmp/junit-*.xml    
