@@ -1,3 +1,6 @@
+#!/bin/bash
+set -ueo pipefail
+
 echo "Testing my mvn build"
 echo "Docker version is "
 docker -v
